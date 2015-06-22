@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>APP Proyecto</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+
+    </head>
+    <!-- INICIO -->
+    <body>
+        
+    <div data-role="page" data-theme='b' id="Perfil">
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="index.html" data-ajax="false"><i class='fa fa-bars'></i></a>
+            <h1>Sobre Mi</h1>
+        </div>
+        
+        <div data-role="content">   
+	        <div class='inset'>
+	        	<span class="imagenes leo w"><img src="imagenes/leo w.jpg" alt="" /></span>
+	        	<h1>Bienvenido a mi APP, soy Leonardo Funes y estudio la carrera de Diseno Grafico</h1>
+	        	
+				<p>Este es mi primer corto de animacion en 3D, con duracion de 31 segundos</p>
+
+				<iframe width="320" height="215" src="https://www.youtube.com/embed/6Ht8WzSXvJY" frameborder="center" allowfullscreen></iframe>
+	        </div>
+		</div>
+		
+
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#Perfil"><i class='blIcon fa fa-hand-o-up'></i>Perfil</a></li>
+					<li><a href="#Galeria"><i class='blIcon fa fa-picture-o'></i>Galeria</a></li>
+					<li><a href="#Contacto"><i class='blIcon fa fa-envelope'></i>Contaco</a></li>
+					<li><a href="#Red Social"><i class='blIcon fa fa-twitter'></i>Red Social</a></li>
+				</ul>
+			</div>
+		</div>
+
+    </div>
+    
+
+
+     <!-- GALERIA -->
+
+
+    <div data-role="page" data-theme='b' id="Galeria">
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="index.html" data-ajax="false"><i class='fa fa-bars'></i></a>
+            <h1>Fotografias</h1>
+        </div>
+        
+        <div data-role="content">   
+	         	 
+<!--
+			USING FLICKR FOR YOUR GALLERY
+			------------------------------	
+	
+			GET PUBLIC PHOTOS ORDERED BY interestingness-desc
+			----
+			
+ 			<ul data-nativedroid-plugin='flickr'
+				data-nativedroid-flickr-apikey='YOUR_API_KEY_HERE'
+				data-nativedroid-flickr-cat='photos'
+				data-nativedroid-flickr-method='search'
+				data-nativedroid-flickr-parameter="user_id=49253686@N04&per_page=48&extras=description,date_upload,geo,views,url_sq,url_l,url_t&sort=interestingness-desc"
+			></ul>
+
+			
+			GET A PHOTOSET LIST BY USER
+			----
+			
+			<ul data-role='listview'
+				data-nativedroid-plugin='flickr'
+				data-nativedroid-flickr-apikey='YOUR_API_KEY_HERE'
+				data-nativedroid-flickr-cat='photosets'
+				data-nativedroid-flickr-method='getList'
+				data-nativedroid-flickr-parameter="user_id=49253686@N04"
+			></ul>
+			
+ -->
+ 
+			<div class='inset'>
+ 			  <ul data-nativedroid-plugin='gallery'>
+ 			  	<li style='background-image:url("imagenes/carro viejop.jpg")' data-image-large='imagenes/carro viejog.jpg' data-image-thumb='imagenes/carro viejop.jpg'><div class='closeTrigger'><i class='icon-remove'></i> cerrar</div><span>Camion de Bomberos viejo</span></li>
+
+ 			  	<li style='background-image:url("imagenes/huevosp.jpg")' data-image-large='imagenes/huevosg.jpg' data-image-thumb='imagenes/huevosp.jpg'><div class='closeTrigger'><i class='icon-remove'></i>Cerrar</div><span>Huevos de Pajaro.</span></li>
+
+ 			  	<li style='background-image:url("imagenes/nacimientop.jpg")' data-image-large='imagenes/nacimientog.jpg' data-image-thumb='imagenes/nacimientop.jpg'><div class='closeTrigger'><i class='icon-remove'></i>Cerrar</div><span>Nacimiento de Pajaros.</span></li>
+
+				<li style='background-image:url("imagenes/La Merced 1p.jpg")' data-image-large='imagenes/La Merced 1g.jpg' data-image-thumb='imagenes/La Merced 1p.jpg'><div class='closeTrigger'><i class='icon-remove'></i> cerrar</div><span>Iglesia la Merced</span></li>
+
+				<li style='background-image:url("imagenes/tp.jpg")' data-image-large='imagenes/tg.jpg' data-image-thumb='imagenes/tp.jpg'><div class='closeTrigger'><i class='icon-remove'></i> cerrar</div><span>Tela de arana</span></li>
+
+				<li style='background-image:url("imagenes/lunap.jpg")' data-image-large='imagenes/lunag.jpg' data-image-thumb='imagenes/lunaq.jpg'><div class='closeTrigger'><i class='icon-remove'></i> cerrar</div><span>Luna TGU.</span></li>
+
+				<li style='background-image:url("imagenes/pp.jpg")' data-image-large='imagenes/pg.jpg' data-image-thumb='imagenes/pq.jpg'><div class='closeTrigger'><i class='icon-remove'></i> cerrar</div><span>Salto Paracaidas</span></li>
+
+				<li style='background-image:url("imagenes/saltop.jpg")' data-image-large='imagenes/saltog.jpg' data-image-thumb='imagenes/saltoq.jpg'><div class='closeTrigger'><i class='icon-remove'></i> cerrar</div><span>Salto #2</span></li>
+
+				<li style='background-image:url("imagenes/2P.jpg")' data-image-large='imagenes/2G.jpg' data-image-thumb='imagenes/2P.jpg'><div class='closeTrigger'><i class='icon-remove'></i> cerrar</div><span>Carretera al norte</span></li>
+
+				<li style='background-image:url("imagenes/comayaguap.jpg")' data-image-large='imagenes/comayaguag.jpg' data-image-thumb='imagenes/comayaguap.jpg'><div class='closeTrigger'><i class='icon-remove'></i> cerrar</div><span>Puente Comayagua</span></li>
+
+				<li style='background-image:url("imagenes/relojp.jpg")' data-image-large='imagenes/relojg.jpg' data-image-thumb='imagenes/relojp.jpg'><div class='closeTrigger'><i class='icon-remove'></i> cerrar</div><span>Reloj Comayagua</span></li>
+
+				<li style='background-image:url("imagenes/La Merced 2p.jpg")' data-image-large='imagenes/La Merced 2g.jpg' data-image-thumb='imagenes/La Merced 2p.jpg'><div class='closeTrigger'><i class='icon-remove'></i> cerrar</div><span>Iglesia la Merced</span></li>
+
+				<li style='background-image:url("imagenes/Sta. Barbara 1p.jpg")' data-image-large='imagenes/Sta. Barbara 1g.jpg' data-image-thumb='imagenes/Sta. Barbara 1p.jpg'><div class='closeTrigger'><i class='icon-remove'></i> Cerrar</div><span>Puente Sta. Barbara.</span></li>
+
+				<li style='background-image:url("imagenes/Sta. Barbara 2p.jpg")' data-image-large='imagenes/Sta. Barbara 2g.jpg' data-image-thumb='imagenes/Sta. Barbara 2p.jpg'><div class='closeTrigger'><i class='icon-remove'></i> Cerrar</div><span>Caida de agua, Sta. Barbara.</span></li>
+
+				<li style='background-image:url("imagenes/Parque p.jpg")' data-image-large='imagenes/Parque g.jpg' data-image-thumb='imagenes/Parque p.jpg'><div class='closeTrigger'><i class='icon-remove'></i> Cerrar</div><span>Parque Central.</span></li>
+
+				<li style='background-image:url("imagenes/Feria p.jpg")' data-image-large='imagenes/Feria g.jpg' data-image-thumb='imagenes/Feria p.jpg'><div class='closeTrigger'><i class='icon-remove'></i>Cerrar</div><span>Feria SPS.</span></li>
+
+				<li style='background-image:url("imagenes/serpientep.jpg")' data-image-large='imagenes/serpienteg.jpg' data-image-thumb='imagenes/serpientep.jpg'><div class='closeTrigger'><i class='icon-remove'></i>Cerrar</div><span>Boa.</span></li>
+
+				<div class='overlay'></div>
+ 			  </ul>
+			</div>
+
+        </div>
+
+
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#Perfil"><i class='blIcon fa fa-hand-o-right'></i>Perfil</a></li>
+					<li><a href="#Galeria"><i class='blIcon fa fa-picture-o'></i>Galeria</a></li>
+					<li><a href="#Contacto"><i class='blIcon fa fa-envelope'></i>Contaco</a></li>
+					<li><a href="#Red Social"><i class='blIcon fa fa-twitter'></i>Red Social</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+
+
+
+ <!-- CONTACTO -->
+    <div data-role="page" data-theme='b' id="Contacto">
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="index.html" data-ajax="false"><i class='fa fa-bars'></i></a>
+            <h1>Contactame</h1>
+        </div>
+        
+
+        <div data-role="content">  
+							<form method="post" action="lefo8@hotmail.com">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Nombre" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="e-mail" placeholder="E-mail" /></div>
+									<div class="12u$">
+										<textarea name="Mensaje" placeholder="Mensaje"></textarea>
+									</div>
+									<div class="12u$">
+								<input type="submit"                       value="Enviar" />
+								</div>
+							</form>
+						</div>
+						</div>
+					
+        	 
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#Perfil"><i class='blIcon fa fa-hand-o-right'></i>Perfil</a></li>
+					<li><a href="#Galeria"><i class='blIcon fa fa-picture-o'></i>Galeria</a></li>
+					<li><a href="#Contacto"><i class='blIcon fa fa-envelope'></i>Contaco</a></li>
+					<li><a href="#Red Social"><i class='blIcon fa fa-twitter'></i>Red Social</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+
+
+
+
+
+ <!-- RED SOCIAL -->
+
+  <div data-role="page" data-theme='b' id="Red Social">
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="index.html" data-ajax="false"><i class='fa fa-bars'></i></a>
+            <h1>Twitter</h1>
+        </div>
+        
+        <div data-role="content">   
+	        <div class='inset'>
+	        	<h1>Sigueme como @Leo_fu15</h1>
+	        </div>
+		</div>
+
+		<a class="twitter-timeline" href="https://twitter.com/search?q=%40FCBarcelona_es%20%20" data-widget-id="612785500840013824">Tweets sobre @FCBarcelona_es </a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		
+
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#Perfil"><i class='blIcon fa fa-hand-o-right'></i>Perfil</a></li>
+					<li><a href="#Galeria"><i class='blIcon fa fa-picture-o'></i>Galeria</a></li>
+					<li><a href="#Contacto"><i class='blIcon fa fa-envelope'></i>Contaco</a></li>
+					<li><a href="#Red Social"><i class='blIcon fa fa-twitter'></i>Red Social</a></li>
+				</ul>
+		    </div>
+        </div>
+
+    
+
+	<script src="js/nativedroid.script.js"></script>
+    </body>
+</html>
